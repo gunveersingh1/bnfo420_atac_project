@@ -1,0 +1,20 @@
+---
+title: "atac_project"
+---
+# ATAC-seq Cardiometabolic Analysis
+
+This project explores chromatin accessibility in liver tissue and its association with cardiometabolic genes.
+
+## Key Results
+
+- Enrichment of cardiometabolic genes in ATAC peaks  
+- Odds ratio ~2.07 (p < 0.001)
+
+## Figures
+
+![](heatmap_annotation_per_gene.png)
+
+![](cardiometabolic_peaks_per_gene.png)
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
