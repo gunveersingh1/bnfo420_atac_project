@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "atac_project",
+    "section": "",
+    "text": "This project explores chromatin accessibility in liver tissue and its association with cardiometabolic genes.\n\n\n\nEnrichment of cardiometabolic genes in ATAC peaks\n\nOdds ratio ~2.07 (p &lt; 0.001)\n\n\n\n\n\n This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#key-results",
+    "href": "index.html#key-results",
+    "title": "atac_project",
+    "section": "",
+    "text": "Enrichment of cardiometabolic genes in ATAC peaks\n\nOdds ratio ~2.07 (p &lt; 0.001)"
+  },
+  {
+    "objectID": "index.html#figures",
+    "href": "index.html#figures",
+    "title": "atac_project",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]
