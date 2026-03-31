@@ -3,6 +3,8 @@ title: "atac_project"
 ---
 # ATAC-seq Cardiometabolic Analysis
 
+Introduction
+
 This project explores chromatin accessibility in liver tissue and its association with cardiometabolic genes.
 
 ## Key Results
