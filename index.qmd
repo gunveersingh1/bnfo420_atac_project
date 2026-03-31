@@ -4,6 +4,13 @@ title: "atac_project"
 # ATAC-seq Cardiometabolic Analysis
 
 ## Introduction
+Cardiometabolic diseases (heart disease, obesity, type 2 diabetes) are influenced by genetic risk variants.
+
+However, many risk variants: Do not fall in coding regions, Instead occur in regulatory DNA
+
+Our goal:
+To understand how chromatin accessibility near cardiometabolic genes is regulated specifically in liver cells. 
+
 
 This project explores chromatin accessibility in liver tissue and its association with cardiometabolic genes.
 
