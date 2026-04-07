@@ -34,7 +34,11 @@ Intronic regions show the highest level of accessibility across many genes, incl
 Although the heatmap does not directly compare multiple tissues, the data is derived from liver ATAC-seq. Therefore, the observed chromatin accessibility patterns reflect regulatory activity in liver cells, supporting the liver-specific aspect of the hypothesis.
 ![](cardiometabolic_peaks_per_gene.png)
 
-![] 
+![](Screen Shot 2026-04-07 at 10.26.34 AM.png)
+![](Screen Shot 2026-04-07 at 10.27.07 AM.png)
+![](Screen Shot 2026-04-07 at 10.27.24 AM.png)
+
+
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
