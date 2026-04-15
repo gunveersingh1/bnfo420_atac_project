@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-be3771519f21acc1c5b6733774c6dcd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4897d45d2f75ed4f519693be625836c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,6 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a></li>
   <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -173,8 +174,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Intronic regions show the highest level of accessibility across many genes, including FTO, TCF7L2, PPARG, and INSR. This is important because introns often contain enhancer elements that control gene expression in a tissue-specific manner. This supports the idea that regulatory DNA contributes to cardiometabolic risk.</p>
 <p>Although the heatmap does not directly compare multiple tissues, the data is derived from liver ATAC-seq. Therefore, the observed chromatin accessibility patterns reflect regulatory activity in liver cells, supporting the liver-specific aspect of the hypothesis. <img src="cardiometabolic_peaks_per_gene.png" class="img-fluid"></p>
 <p><img src="Screen Shot 2026-04-07 at 10.26.34 AM.png" class="img-fluid"> <img src="Screen Shot 2026-04-07 at 10.27.07 AM.png" class="img-fluid"> <img src="Screen Shot 2026-04-07 at 10.27.24 AM.png" class="img-fluid"></p>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>Our results consistently show that cardiometabolic genes are strongly associated with chromatin accessibility in liver tissue. The bar plot demonstrated that all cardiometabolic genes in our dataset contained at least one ATAC peak, whereas only a smaller proportion of control genes showed accessibility. This indicates a clear enrichment of open chromatin regions near cardiometabolic genes, suggesting these genes are more likely to be actively regulated. This finding is further supported by the Fisher’s Exact Test, which revealed a highly significant association (p &lt; 2.2 × 10⁻¹⁶) between cardiometabolic genes and the presence of ATAC peaks. The infinite odds ratio arises because every cardiometabolic gene had at least one peak, reinforcing the strength of this relationship. While this highlights a strong enrichment, it also suggests a limitation in the contingency table structure, as zero counts can inflate the odds ratio. The heatmap provided additional insight into where these accessible regions are located. Peaks were observed in promoter regions, which are directly involved in controlling transcription, as well as in intronic regions that often contain regulatory elements such as enhancers. Notably, genes like FTO and TCF7L2 showed stronger accessibility signals, suggesting they may play particularly important regulatory roles in liver tissue. Finally, the boxplot showed that cardiometabolic genes have relatively consistent levels of accessibility across genes, while control genes exhibit greater variability. This suggests that chromatin accessibility in cardiometabolic genes is more uniformly maintained, whereas control genes may be more heterogeneously regulated. Overall, these findings support our hypothesis that cardiometabolic risk genes are more frequently associated with accessible chromatin regions in liver cells, highlighting the potential role of liver-specific regulatory mechanisms in cardiometabolic disease risk. This is a Quarto website.</p>
+<p>##Citations: <a href="https://pubmed.ncbi.nlm.nih.gov/25559105/">A Method for Assaying Chromatin Accessibility Genome-Wide</a> The dataset used in this study was obtained from the GEO database (<a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296875">GSE296875</a>). To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
 
 
 </section>
