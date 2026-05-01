@@ -25,4 +25,5 @@ format:
     toc-location: left
     smooth-scroll: true
     code-fold: false
-    mermaid: true
+    mermaid:
+      theme: default
