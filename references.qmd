@@ -1,0 +1,27 @@
+---
+title: "References"
+---
+
+## References
+
+- **Primary Dataset and Study:**  
+  Primary Study Authors. (2025). *Single-nucleus multiomic analysis of human liver reveals regulatory mechanisms of cardiometabolic disease*.  
+  https://pubmed.ncbi.nlm.nih.gov/41338218/  
+  GEO Accession: GSE296875  
+
+---
+
+- Schmitt, A. D., et al. (2015). *Integrating chromatin accessibility with genetic variation to understand gene regulation*.  
+  https://pubmed.ncbi.nlm.nih.gov/25559105/
+
+- Zhang, Y., et al. (2023). *Chromatin accessibility and disease regulation*. Genome Biology and Evolution.  
+  https://academic.oup.com/gpb/article/23/6/qzaf115/8340039  
+
+- Calderon, D., et al. (2022). *Chromatin accessibility dynamics in disease*. eLife.  
+  https://elifesciences.org/articles/72792  
+
+- Li, X., et al. (2023). *Epigenetic regulation in metabolic disease*. ScienceDirect.  
+  https://www.sciencedirect.com/science/article/abs/pii/S1567576923001261  
+
+- Wang, Y., et al. (2022). *Chromatin accessibility in liver disease progression*.  
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC9116206/

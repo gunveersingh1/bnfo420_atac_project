@@ -1,0 +1,17 @@
+---
+title: "Group 3"
+---
+
+## Members
+
+- **Gunveer Singh** — led data analysis and R scripting, including loading and processing the ATAC-seq dataset, annotating peaks using ChIPseeker, performing statistical analyses (Fisher’s Exact Test and ANOVA), debugging code, and generating figures, contributed to interpretation of results and writing key sections of the website  
+
+- **Rayyan** — responsible for presentation and website design, including organizing figures, improving visualization clarity and aesthetics, structuring the website layout, and ensuring results were clearly communicated, contributed to interpretation and formatting of content  
+
+- **Sifti** — supported data analysis and interpretation by reviewing relevant literature, connecting findings to published research, assisting with figure interpretation, and contributing to writing and refining sections of the project  
+
+## Collaboration rules (simple)
+- Pull before you start work.
+- Commit small changes with clear messages.
+- Only one person edits the *same* `.qmd` file at a time.
+- Use Issues (optional) for tasks/bugs.
