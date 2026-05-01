@@ -129,8 +129,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question">Research question</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#methods-diagram" id="toc-methods-diagram" class="nav-link" data-scroll-target="#methods-diagram">Methods Diagram</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
   <li><a href="#pipeline-diagram" id="toc-pipeline-diagram" class="nav-link" data-scroll-target="#pipeline-diagram">Pipeline Diagram</a></li>
   </ul></li>
@@ -171,31 +170,27 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Cardiometabolic diseases, including diabetes, obesity, and non-alcoholic fatty liver disease (NAFLD), are increasing globally and represent a major public health concern (WHO, 2023; CDC, 2022). The liver plays a central role in regulating lipid metabolism, glucose homeostasis, and overall energy balance, making it a key organ in the development and progression of these conditions (Cohen et al., 2011; Tilg et al., 2017). While genome-wide association studies (GWAS) have identified many genetic variants linked to cardiometabolic disease, the biological mechanisms that connect these variants to changes in gene expression are still not fully understood.</p>
-<p>One important factor influencing gene expression is chromatin accessibility. Chromatin, which consists of DNA wrapped around histone proteins, can exist in either an open or closed state, directly impacting transcriptional activity (Kornberg, 1974; Thurman et al., 2012). In open chromatin regions, transcription factors and regulatory proteins can bind DNA and activate gene expression, while closed chromatin restricts access and reduces transcriptional activity (Buenrostro et al., 2013; Roadmap Epigenomics Consortium, 2015). These accessible regions are often located in key regulatory elements such as promoters, enhancers, and introns, which play critical roles in controlling gene expression (ENCODE Project Consortium, 2012; Andersson et al., 2014).</p>
-<p>ATAC-seq (Assay for Transposase-Accessible Chromatin using sequencing) is a powerful epigenomic technique used to identify open chromatin regions across the genome (Buenrostro et al., 2013). By using a transposase enzyme to insert sequencing adapters into accessible DNA, ATAC-seq allows for high-resolution mapping of regulatory regions and provides insight into gene regulation at a genome-wide level (Corces et al., 2017; Satpathy et al., 2019). This method has been widely used to study chromatin dynamics in different tissues and disease contexts, including cancer and metabolic disorders (Cusanovich et al., 2018; Stuart et al., 2021).</p>
-<p>Recent advances in single-nucleus multiomic technologies have enabled the simultaneous measurement of chromatin accessibility and gene expression at the cellular level. In particular, a recent study using single-nucleus RNA-seq and ATAC-seq profiling of human liver tissue analyzed samples from 39 individuals and identified over 68,000 nuclei and more than 300,000 accessible chromatin regions across multiple liver cell types (PMID: 41338218). This dataset provides a high-resolution view of liver-specific gene regulation and allows for the investigation of how chromatin accessibility varies across cell types and disease states. :contentReference<span data-index="0">oaicite:0</span></p>
-<p>These approaches have demonstrated that chromatin accessibility is closely linked to gene regulatory mechanisms and may play a critical role in cardiometabolic disease risk and progression. Additional studies have further highlighted the importance of integrating epigenomic and transcriptomic data to better understand liver biology and disease (Genome Biology and Evolution, 2023; eLife, 2022; ScienceDirect, 2023; PMC9116206).</p>
-<p>Despite these advances, there is still a gap in understanding how chromatin accessibility specifically relates to cardiometabolic genes within liver tissue and how these patterns change across disease states. Addressing this gap is important for identifying regulatory mechanisms that contribute to disease development and progression and may provide insight into potential therapeutic targets (Tilg et al., 2021; Anstee et al., 2019).</p>
-<p>In this study, we analyze a human liver single-nucleus ATAC-seq dataset derived from 39 deceased human liver samples, consisting of approximately 68,000 nuclei and over 300,000 accessible chromatin regions. Steatosis severity information was obtained from the supplemental data of the original study and used to group samples into three categories: NA/None, Mild/Moderate, and Severe. We first evaluate whether cardiometabolic genes are more frequently associated with ATAC-seq peaks compared to control genes. We then examine where these peaks are located within genes to better understand their regulatory roles. Finally, we assess how chromatin accessibility changes across steatosis severity groups to determine its relationship with disease progression.</p>
-<p><strong>Hypothesis: Cardiometabolic genes are more frequently associated with liver-specific ATAC-seq peaks, accessible chromatin regions are concentrated in regulatory areas such as promoters and introns, and chromatin accessibility changes across steatosis severity groups (NA/None, Mild/Moderate, Severe), reflecting its role in gene regulation and disease progression.</strong></p>
-</section>
-<section id="methods-diagram" class="level2">
-<h2 class="anchored" data-anchor-id="methods-diagram">Methods Diagram</h2>
+<p>Cardiometabolic diseases, including diabetes, obesity, and NAFLD, are increasing globally and represent a major public health concern. The liver plays a key role in metabolism and disease progression. While genome-wide association studies (GWAS) have identified risk variants, the mechanisms linking these variants to gene expression remain unclear.</p>
+<p>Chromatin accessibility is a key factor in gene regulation. Open chromatin allows transcription factors to bind DNA, while closed chromatin restricts access. These regions are often located in regulatory elements such as promoters and introns.</p>
+<p>ATAC-seq is used to identify open chromatin regions across the genome. A recent multiome study analyzed human liver tissue from 39 individuals and identified ~68,000 nuclei and over 300,000 accessible regions (<a href="https://pubmed.ncbi.nlm.nih.gov/41338218/">Primary Study, 2025</a>).</p>
+<p>Previous work shows that integrating chromatin accessibility with genetic variation helps explain gene regulation (<a href="https://pubmed.ncbi.nlm.nih.gov/25559105/">Schmitt et al., 2015</a>). Additional studies highlight its role in disease and regulatory processes (<a href="https://academic.oup.com/gpb/article/23/6/qzaf115/8340039">Zhang et al., 2023</a>; <a href="https://elifesciences.org/articles/72792">Calderon et al., 2022</a>; <a href="https://www.sciencedirect.com/science/article/abs/pii/S1567576923001261">Li et al., 2023</a>; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9116206/">Wang et al., 2022</a>).</p>
+<p>Despite these advances, it remains unclear how chromatin accessibility relates to cardiometabolic genes and how these patterns change with disease.</p>
+<p>In this study, we analyze a human liver ATAC-seq dataset from 39 deceased samples (~68,000 nuclei and ~300,000 peaks). Steatosis severity was grouped into NA/None, Mild/Moderate, and Severe. We evaluate gene enrichment, peak location, and changes in accessibility across disease severity.</p>
+<p><strong>Hypothesis: Cardiometabolic genes are enriched in accessible chromatin, accessibility is concentrated in regulatory regions (promoters and introns), and chromatin accessibility changes across steatosis severity groups.</strong></p>
 <section id="pipeline-diagram" class="level3">
 <h3 class="anchored" data-anchor-id="pipeline-diagram">Pipeline Diagram</h3>
 <p>flowchart TD</p>
-<p>A[Load ATAC-seq Dataset<br>GSE296875] –&gt; B[Preprocessing<br>Clean data, format peaks, integrate metadata]</p>
-<p>B –&gt; C[Annotate Peaks<br>ChIPseeker<br>(Promoter, Intron, Exon, Intergenic)]</p>
-<p>C –&gt; D[Classify Genes<br>Cardiometabolic vs Control]</p>
-<p>D –&gt; E[Enrichment Analysis<br>Fisher’s Exact Test]</p>
-<p>C –&gt; F[Peak Distribution Analysis<br>Genomic Regions]</p>
-<p>D –&gt; G[Accessibility Comparison<br>Boxplots]</p>
-<p>B –&gt; H[Steatosis Grouping<br>NA/None, Mild/Moderate, Severe]</p>
+<p>A[Dataset<br>GSE296875] –&gt; B[Preprocessing<br>Clean + format + metadata]</p>
+<p>B –&gt; C[Peak Annotation<br>ChIPseeker]</p>
+<p>C –&gt; D[Gene Classification<br>CM vs Control]</p>
+<p>D –&gt; E[Fisher Test<br>Enrichment]</p>
+<p>C –&gt; F[Peak Distribution<br>Genomic Regions]</p>
+<p>D –&gt; G[Accessibility<br>Boxplots]</p>
+<p>B –&gt; H[Steatosis Groups<br>NA / Mild / Severe]</p>
 <p>H –&gt; I[Group Comparison<br>Boxplots]</p>
-<p>I –&gt; J[Statistical Testing<br>ANOVA]</p>
+<p>I –&gt; J[ANOVA]</p>
 <p>E –&gt; K[Visualization] F –&gt; K G –&gt; K J –&gt; K</p>
-<p>K –&gt; L[Interpretation<br>Biological Insights]</p>
+<p>K –&gt; L[Interpretation]</p>
 </section>
 </section>
 <section id="datasets" class="level2">
