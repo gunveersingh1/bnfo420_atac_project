@@ -23,30 +23,11 @@ In this study, we analyze a human liver single-nucleus ATAC-seq dataset derived 
 
 **Hypothesis: Cardiometabolic genes are enriched in accessible chromatin, accessible regions are concentrated in regulatory areas such as promoters and introns, and chromatin accessibility changes across steatosis severity groups, reflecting its role in gene regulation and disease progression.**
 
-#Methods Pipeline Diagram
+##Methods Pipeline Diagram
+### Pipeline Diagram
 
-<div class="mermaid">
-flowchart LR
+![](images/pipeline.png)
 
-A[Dataset] --> B[Preprocessing]
-B --> C[Annotation]
-C --> D[Classification]
-D --> E[Fisher Test]
-
-C --> F[Peak Regions]
-D --> G[Boxplots]
-
-B --> H[Steatosis Groups]
-H --> I[Group Comparison]
-I --> J[ANOVA]
-
-E --> K[Visualization]
-F --> K
-G --> K
-J --> K
-
-K --> L[Interpretation]
-</div>
 
 ## Dataset(s)
 
@@ -54,15 +35,22 @@ K --> L[Interpretation]
 
 - **Sample size:** 39 deceased human liver samples (~68,000 nuclei total), with approximately 300,000 accessible chromatin regions (ATAC-seq peaks). Samples were grouped by steatosis severity using supplemental metadata from the original study:
   - NA/None (n = 19)  
-  - Mild/Moderate (n = 16)  
+
+  - Mild/Moderate (n = 16) 
+
   - Severe (n = 4)  
 
 - **Key variables:**
   - Chromatin accessibility peaks (genomic coordinates)
+
   - Gene annotations (mapped using ChIPseeker)
+
   - Gene expression data (from matched RNA-seq modality)
+
   - Gene type (cardiometabolic vs control)
+
   - Peak location within gene (promoter, intron, exon, intergenic)
+
   - Steatosis severity group (NA/None, Mild/Moderate, Severe)
 
 - **License/usage notes:**
@@ -75,47 +63,74 @@ K --> L[Interpretation]
 ## Planned analysis
 
 - **Cleaning / QC**
-  - Load ATAC-seq peak dataset and verify genomic coordinate formatting and gene annotations  
-  - Remove missing or inconsistent entries and ensure accurate peak-to-gene mapping  
-  - Integrate steatosis metadata from the supplemental information of the original study  
+  - Load ATAC-seq peak dataset and verify genomic coordinate formatting and gene annotations
+
+  - Remove missing or inconsistent entries and ensure accurate peak-to-gene mapping 
+
+  - Integrate steatosis metadata from the supplemental information of the original study 
+
   - Group samples into three categories: NA/None, Mild/Moderate, and Severe  
+
   - Confirm consistency between peak data and sample-level metadata across the 39 liver samples  
 
 - **Visualizations**
-  - Bar plots to compare proportion of genes with ATAC peaks (cardiometabolic vs control)  
+  - Bar plots to compare proportion of genes with ATAC peaks (cardiometabolic vs control) 
+
   - Heatmaps to visualize distribution of peaks across genomic regions (promoter, intron, exon, intergenic)  
-  - Boxplots to compare chromatin accessibility between cardiometabolic and control genes  
+
+  - Boxplots to compare chromatin accessibility between cardiometabolic and control genes 
+
   - Boxplots to assess differences in chromatin accessibility across steatosis severity groups  
 
 - **Statistical / analytical approach**
   - Fisher’s Exact Test to evaluate enrichment of ATAC peaks in cardiometabolic vs control genes  
-  - ANOVA to test for differences in chromatin accessibility across steatosis groups (NA/None, Mild/Moderate, Severe)  
+
+  - ANOVA to test for differences in chromatin accessibility across steatosis groups (NA/None, Mild/Moderate, Severe) 
+
   - Descriptive statistics to summarize peak distributions and variability  
 
 - **Validation / robustness checks**
   - Cross-check peak annotation categories (promoter, intron, exon, intergenic) for consistency  
-  - Compare results across multiple visualizations to ensure patterns are reproducible  
-  - Evaluate statistical significance (p-values) to confirm observed trends  
-  - Assess within-group variability to ensure results are not driven by outliers  
+
+  - Compare results across multiple visualizations to ensure patterns are reproducible 
+
+  - Evaluate statistical significance (p-values) to confirm observed trends 
+
+  - Assess within-group variability to ensure results are not driven by outliers 
+
   - Verify steatosis group assignments using supplemental metadata from the original study  
 
 - **Website sections**
   - One-paragraph summary and Abstract → *index.qmd*  
+
   - Introduction (background, motivation, rationale, and hypothesis) → *proposal.qmd*  
+
   - Dataset description (including multiome ATAC-seq + RNA-seq data and steatosis metadata) → *proposal.qmd*  
-  - Methods (data processing, peak annotation, and analysis pipeline) → *proposal.qmd*  
+
+  - Methods (data processing, peak annotation, and analysis pipeline) → *proposal.qmd* 
+
   - Results (figure-by-figure analysis with clear interpretation) → *results.qmd*  
-  - Discussion (synthesis of findings and connection to literature) → *results.qmd*  
+
+  - Discussion (synthesis of findings and connection to literature) → *results.qmd* 
+
   - Limitations and future work → *results.qmd*  
+
   - References with cited sources → *references.bib*  
+
   - Team contributions → *team.qmd*  
 
 - **Key figures/tables**
-  - Bar plot showing proportion of cardiometabolic vs control genes associated with ATAC-seq peaks  
+  - Bar plot showing proportion of cardiometabolic vs control genes associated with ATAC-seq peaks
+
   - Fisher’s Exact Test results (table or figure) demonstrating statistical significance of enrichment  
-  - Heatmap showing distribution of chromatin accessibility across genomic regions  
-  - Bar plot of peak locations (promoter, intron, exon, intergenic)  
-  - Boxplot comparing chromatin accessibility between cardiometabolic and control genes  
+
+  - Heatmap showing distribution of chromatin accessibility across genomic regions 
+
+  - Bar plot of peak locations (promoter, intron, exon, intergenic) 
+
+  - Boxplot comparing chromatin accessibility between cardiometabolic and control genes 
+
   - Boxplot comparing chromatin accessibility across steatosis severity groups (NA/None, Mild/Moderate, Severe)  
+  
   - ANOVA results summary (table or figure) showing differences in accessibility across disease groups  
 
