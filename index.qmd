@@ -37,5 +37,5 @@ Overall, these findings suggest that chromatin accessibility plays a critical ro
 ## Where to find things
 - **Scripts:** `scripts/`
 - **Data notes:** `data/README.md`
-- **Figures:** `figures/`
-- **Citations:** `references.bib`
+- **Figures:** `images/`
+- **Citations:** `references.qmd`
