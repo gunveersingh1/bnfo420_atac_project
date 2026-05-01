@@ -1,66 +1,43 @@
-/* css styles */
-/* General readability */
+/* Make page wider */
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Increase readable width */
 body {
+  max-width: 1200px;
+  margin: auto;
   line-height: 1.65;
   font-size: 16px;
-  max-width: 900px;
+}
+
+/* Fix squished content */
+main {
+  max-width: 1100px;
   margin: auto;
 }
 
-/* Titles */
-h1 {
-  font-size: 2.3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-h3 {
-  margin-top: 1.5rem;
-}
-
-/* Paragraph spacing */
+/* Improve spacing */
 p {
-  margin-bottom: 0.8rem;
-}
-
-/* Lists */
-ul {
   margin-bottom: 1rem;
 }
 
-/* Images */
+/* Headings spacing */
+h1, h2, h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Images centered and not tiny */
 img {
   display: block;
   margin: 20px auto;
+  max-width: 90%;
   border-radius: 8px;
-  max-width: 85%;
 }
 
-/* Figure captions */
-figcaption {
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 5px;
-}
-
-/* Navbar */
-.navbar {
-  font-size: 1rem;
-}
-
-/* Code blocks */
-pre {
-  border-radius: 8px;
-  padding: 8px;
-}
-
-/* Sections */
-.section {
-  margin-bottom: 1.5rem;
+/* Make TOC not crush content */
+.sidebar {
+  max-width: 250px;
 }
