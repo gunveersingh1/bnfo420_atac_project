@@ -42,18 +42,24 @@ In this study, we analyze a human liver single-nucleus ATAC-seq dataset derived 
   - Severe (n = 4)  
 
 - **Key variables:**
-  - Chromatin accessibility peaks (genomic coordinates)
+
+  - Chromatin accessibility peaks (genomic coordinates from ATAC-seq)
 
   - Gene annotations (mapped using ChIPseeker)
 
   - Gene expression data (from matched RNA-seq modality)
 
-  - Gene type (cardiometabolic vs control)
+  - Gene classification:
+    - Cardiometabolic genes (genes associated with metabolic disease)
+    - Control group defined as all remaining non-cardiometabolic genes in the dataset
 
-  - Peak location within gene (promoter, intron, exon, intergenic)
+  - Peak location within genes (promoter, intron, exon, intergenic regions)
 
-  - Steatosis severity group (NA/None, Mild/Moderate, Severe)
-
+  - Steatosis severity group:
+    - NA/None (used as the baseline control group)
+    - Mild/Moderate
+    - Severe
+    
 - **License/usage notes:**
   - Publicly available dataset from GEO (NCBI)
   - Derived from de-identified human samples; no personally identifiable information
