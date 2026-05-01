@@ -1,1 +1,66 @@
 /* css styles */
+/* General readability */
+body {
+  line-height: 1.65;
+  font-size: 16px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Titles */
+h1 {
+  font-size: 2.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 0.8rem;
+}
+
+/* Lists */
+ul {
+  margin-bottom: 1rem;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 85%;
+}
+
+/* Figure captions */
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Navbar */
+.navbar {
+  font-size: 1rem;
+}
+
+/* Code blocks */
+pre {
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 1.5rem;
+}
