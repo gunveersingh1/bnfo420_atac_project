@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>atac_project</title>
+<title>ATAC-seq analysis of liver chromatin accessibility Focus on gene regulation and disease progression – ATAC-seq Liver Chromatin Accessibility</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4897d45d2f75ed4f519693be625836c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f7919f14b89ae9a431cba0b331f0b52b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,12 +70,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">atac_project</span>
+    <span class="navbar-title">ATAC-seq Liver Chromatin Accessibility</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -97,8 +98,20 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="./proposal.html"> 
+<span class="menu-text">Methods</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./results.html"> 
+<span class="menu-text">Results</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./team.html"> 
+<span class="menu-text">Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references.html"> 
+<span class="menu-text">References</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -110,28 +123,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#atac-seq-cardiometabolic-analysis" id="toc-atac-seq-cardiometabolic-analysis" class="nav-link active" data-scroll-target="#atac-seq-cardiometabolic-analysis">ATAC-seq Cardiometabolic Analysis</a>
-  <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a></li>
-  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
-  </ul></li>
+  <li><a href="#one-paragraph-summary" id="toc-one-paragraph-summary" class="nav-link active" data-scroll-target="#one-paragraph-summary">One-paragraph summary</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#project-roadmap-living" id="toc-project-roadmap-living" class="nav-link" data-scroll-target="#project-roadmap-living">Project roadmap (living)</a></li>
+  <li><a href="#where-to-find-things" id="toc-where-to-find-things" class="nav-link" data-scroll-target="#where-to-find-things">Where to find things</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">atac_project</h1>
+<h1 class="title">ATAC-seq analysis of liver chromatin accessibility Focus on gene regulation and disease progression</h1>
+<p class="subtitle lead">BNFO 420 Capstone</p>
 </div>
 
 
@@ -148,40 +162,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="atac-seq-cardiometabolic-analysis" class="level1">
-<h1>ATAC-seq Cardiometabolic Analysis</h1>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Cardiometabolic diseases—including heart disease, obesity, and type 2 diabetes—represent a major global health burden and arise from a combination of environmental and genetic factors. Large-scale genetic studies, such as genome-wide association studies (GWAS), have identified numerous genetic variants associated with increased disease risk. Notably, the majority of these variants are not located within protein-coding regions of the genome, but instead occur in noncoding regulatory DNA. This suggests that many disease-associated variants may influence gene expression rather than directly altering protein structure.</p>
-<p>Regulatory DNA elements, such as enhancers and promoters, play a crucial role in controlling gene expression by interacting with transcription factors and other regulatory proteins. The activity of these elements is strongly influenced by chromatin accessibility. Chromatin can exist in either an open (accessible) or closed (inaccessible) state, which determines whether regulatory proteins can bind DNA and activate transcription. As a result, mapping chromatin accessibility provides key insights into which regions of the genome are functionally active in specific cell types.</p>
-<p>One powerful method for measuring chromatin accessibility is ATAC-seq, which uses a transposase enzyme to identify regions of open chromatin across the genome. This technique enables high-resolution profiling of regulatory landscapes and has become an essential tool for linking noncoding genetic variation to gene regulatory function.</p>
-<p>The liver is a central organ in metabolic regulation, playing critical roles in glucose homeostasis, lipid metabolism, and energy balance. Because of these functions, liver cells are highly relevant to the development of cardiometabolic diseases. Genetic variants that affect regulatory regions in liver tissue may alter chromatin accessibility and disrupt normal gene expression patterns, ultimately contributing to disease risk.</p>
-<p>In this project, we investigate chromatin accessibility in liver tissue using ATAC-seq and examine its relationship to genes associated with cardiometabolic disease. By focusing on regulatory regions near these genes, we aim to understand how noncoding genetic variation influences gene expression in a tissue-specific context. This work will provide insight into the molecular mechanisms underlying cardiometabolic disease and may help identify potential targets for future therapeutic intervention.</p>
+<section id="one-paragraph-summary" class="level2">
+<h2 class="anchored" data-anchor-id="one-paragraph-summary">One-paragraph summary</h2>
+<p>Cardiometabolic diseases such as diabetes, obesity, and NAFLD are increasing worldwide, and understanding how gene regulation in the liver contributes to these conditions is an important research question. In this project, we used a human liver single-nucleus ATAC-seq dataset containing approximately 68,000 nuclei and over 300,000 accessible chromatin regions across multiple liver samples. We grouped the samples into three steatosis severity categories—NA/None, Mild/Moderate, and Severe—to analyze how chromatin accessibility changes with disease progression. Our approach involved annotating ATAC-seq peaks to genes using tools like ChIPseeker and comparing chromatin accessibility between cardiometabolic genes and control genes, as well as across these steatosis groups. We also applied statistical tests such as Fisher’s Exact Test and ANOVA to determine significance. To present our findings, we generated figures including bar plots, heatmaps, and boxplots to visualize enrichment, genomic location, and disease-related changes in accessibility.</p>
 </section>
-<section id="key-results" class="level2">
-<h2 class="anchored" data-anchor-id="key-results">Key Results</h2>
-<ul>
-<li>Enrichment of cardiometabolic genes in ATAC peaks<br>
-</li>
-<li>Odds ratio ~2.07 (p &lt; 0.001)</li>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Cardiometabolic diseases, including diabetes, obesity, and non-alcoholic fatty liver disease (NAFLD), are increasing globally and represent a major public health challenge. The liver plays a central role in metabolic regulation, and disruptions in gene expression within liver cells are closely linked to disease development and progression. Chromatin accessibility is a key regulator of gene expression, as open chromatin regions allow transcription factors and regulatory proteins to bind DNA. ATAC-seq (Assay for Transposase-Accessible Chromatin using sequencing) provides a genome-wide method for identifying these accessible regions, offering insight into gene regulatory mechanisms that may contribute to disease.</p>
+<p>In this study, we analyzed a human liver single-nucleus ATAC-seq dataset consisting of approximately 68,000 nuclei and over 300,000 accessible chromatin regions across 39 liver samples. To investigate the relationship between chromatin accessibility and disease progression, samples were grouped into three steatosis severity categories: NA/None, Mild/Moderate, and Severe. Our analysis first evaluated whether cardiometabolic genes are more frequently associated with ATAC-seq peaks compared to control genes. We then examined the genomic distribution of these peaks to determine whether accessible regions are concentrated in regulatory elements such as promoters and introns. Finally, we assessed how chromatin accessibility varies across steatosis severity groups to understand its role in disease progression.</p>
+<p>Our results demonstrate that cardiometabolic genes are significantly enriched in accessible chromatin regions, supported by Fisher’s Exact Test (p &lt; 2.2 × 10⁻¹⁶), indicating a strong association between gene type and chromatin accessibility. We also found that ATAC-seq peaks are predominantly located in promoters and introns, highlighting the importance of regulatory DNA in controlling gene expression. Furthermore, analysis across steatosis groups revealed statistically significant differences in chromatin accessibility (ANOVA F = 9.87, p &lt; 0.001), suggesting that chromatin structure changes as disease severity increases.</p>
+<p>Overall, these findings suggest that chromatin accessibility plays a critical role in regulating cardiometabolic genes in the liver and may contribute to disease progression. This study provides insight into the epigenetic mechanisms underlying liver disease and highlights the potential for targeting regulatory regions in future therapeutic strategies.</p>
+</section>
+<section id="project-roadmap-living" class="level2">
+<h2 class="anchored" data-anchor-id="project-roadmap-living">Project roadmap (living)</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">Identify and load human liver single-nucleus ATAC-seq dataset (~68,000 nuclei, ~300,000 peaks)<br>
+</label></p></li>
+<li><p><label><input type="checkbox" checked="">Define variables: cardiometabolic vs control genes and steatosis groups (NA/None, Mild/Moderate, Severe)</label></p></li>
+<li><p><label><input type="checkbox" checked="">Analyze whether cardiometabolic genes are associated with ATAC-seq peaks<br>
+</label></p></li>
+<li><p><label><input type="checkbox" checked="">Perform statistical testing using Fisher’s Exact Test to evaluate enrichment</label></p></li>
+<li><p><label><input type="checkbox" checked="">Investigate chromatin accessibility by determining where peaks are located within genes<br>
+</label></p></li>
+<li><p><label><input type="checkbox" checked="">Annotate peaks using ChIPseeker (promoter, intron, exon, intergenic) and visualize distributions</label></p></li>
+<li><p><label><input type="checkbox" checked="">Analyze chromatin accessibility across steatosis severity groups (NA/None, Mild/Moderate, Severe)<br>
+</label></p></li>
+<li><p><label><input type="checkbox" checked="">Compare groups using boxplots and ANOVA</label></p></li>
+<li><p><label><input type="checkbox" checked="">Generate final figures (bar plots, heatmaps, boxplots) and interpret results in a structured narrative<br>
+</label></p></li>
+<li><p><label><input type="checkbox" checked="">Discuss limitations, biological interpretation, and future directions for the study</label></p></li>
 </ul>
 </section>
-<section id="figures" class="level2">
-<h2 class="anchored" data-anchor-id="figures">Figures</h2>
-<p><img src="heatmap_annotation_per_gene.png" class="img-fluid"> _Findings -This heatmap shows the distribution of ATAC-seq peaks across cardiometabolic genes in different genomic regions (promoter, exon, intron, intergenic). Darker coloring indicates higher chromatin accessibility.</p>
-<p>The presence of ATAC peaks across many cardiometabolic genes indicates that these genes are associated with open chromatin, which reflects active regulatory DNA. This supports the hypothesis that regulatory elements play a role in disease risk.</p>
-<p>There is strong enrichment of peaks in intronic and promoter regions, while exon regions show very low accessibility. Since promoters and introns commonly contain regulatory elements such as enhancers and transcription start sites, this suggests that gene regulation—rather than coding sequence changes—is a key mechanism influencing these genes.</p>
-<p>Intronic regions show the highest level of accessibility across many genes, including FTO, TCF7L2, PPARG, and INSR. This is important because introns often contain enhancer elements that control gene expression in a tissue-specific manner. This supports the idea that regulatory DNA contributes to cardiometabolic risk.</p>
-<p>Although the heatmap does not directly compare multiple tissues, the data is derived from liver ATAC-seq. Therefore, the observed chromatin accessibility patterns reflect regulatory activity in liver cells, supporting the liver-specific aspect of the hypothesis. <img src="cardiometabolic_peaks_per_gene.png" class="img-fluid"></p>
-<p><img src="Screen Shot 2026-04-07 at 10.26.34 AM.png" class="img-fluid"> <img src="Screen Shot 2026-04-07 at 10.27.07 AM.png" class="img-fluid"> <img src="Screen Shot 2026-04-07 at 10.27.24 AM.png" class="img-fluid"></p>
-</section>
-<section id="discussion" class="level2">
-<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
-<p>Our results consistently show that cardiometabolic genes are strongly associated with chromatin accessibility in liver tissue. The bar plot demonstrated that all cardiometabolic genes in our dataset contained at least one ATAC peak, whereas only a smaller proportion of control genes showed accessibility. This indicates a clear enrichment of open chromatin regions near cardiometabolic genes, suggesting these genes are more likely to be actively regulated. This finding is further supported by the Fisher’s Exact Test, which revealed a highly significant association (p &lt; 2.2 × 10⁻¹⁶) between cardiometabolic genes and the presence of ATAC peaks. The infinite odds ratio arises because every cardiometabolic gene had at least one peak, reinforcing the strength of this relationship. While this highlights a strong enrichment, it also suggests a limitation in the contingency table structure, as zero counts can inflate the odds ratio. The heatmap provided additional insight into where these accessible regions are located. Peaks were observed in promoter regions, which are directly involved in controlling transcription, as well as in intronic regions that often contain regulatory elements such as enhancers. Notably, genes like FTO and TCF7L2 showed stronger accessibility signals, suggesting they may play particularly important regulatory roles in liver tissue. Finally, the boxplot showed that cardiometabolic genes have relatively consistent levels of accessibility across genes, while control genes exhibit greater variability. This suggests that chromatin accessibility in cardiometabolic genes is more uniformly maintained, whereas control genes may be more heterogeneously regulated. Overall, these findings support our hypothesis that cardiometabolic risk genes are more frequently associated with accessible chromatin regions in liver cells, highlighting the potential role of liver-specific regulatory mechanisms in cardiometabolic disease risk. This is a Quarto website.</p>
-<p>##Citations: <a href="https://pubmed.ncbi.nlm.nih.gov/25559105/">A Method for Assaying Chromatin Accessibility Genome-Wide</a> The dataset used in this study was obtained from the GEO database (<a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296875">GSE296875</a>). To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="where-to-find-things" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-find-things">Where to find things</h2>
+<ul>
+<li><strong>Scripts:</strong> <code>scripts/</code></li>
+<li><strong>Data notes:</strong> <code>data/README.md</code></li>
+<li><strong>Figures:</strong> <code>figures/</code></li>
+<li><strong>Citations:</strong> <code>references.bib</code></li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -590,4 +611,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

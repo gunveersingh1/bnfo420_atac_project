@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – ATAC-seq Liver Chromatin Accessibility</title>
+<title>Results – ATAC-seq Liver Chromatin Accessibility</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Methods</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./results.html"> 
+    <a class="nav-link active" href="./results.html" aria-current="page"> 
 <span class="menu-text">Results</span></a>
   </li>  
   <li class="nav-item">
@@ -124,7 +124,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link active" data-scroll-target="#key-findings">Key findings</a></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a>
+  <ul class="collapse">
+  <li><a href="#figure-1-cardiometabolic-vs-control-gene-accessibility" id="toc-figure-1-cardiometabolic-vs-control-gene-accessibility" class="nav-link" data-scroll-target="#figure-1-cardiometabolic-vs-control-gene-accessibility">Figure 1: Cardiometabolic vs Control Gene Accessibility</a></li>
+  <li><a href="#figure-2-fishers-exact-test-results" id="toc-figure-2-fishers-exact-test-results" class="nav-link" data-scroll-target="#figure-2-fishers-exact-test-results">Figure 2: Fisher’s Exact Test Results</a></li>
+  <li><a href="#transition-to-next-question" id="toc-transition-to-next-question" class="nav-link" data-scroll-target="#transition-to-next-question">Transition to Next Question</a></li>
+  <li><a href="#figure-3-heatmap-of-peak-distribution-across-gene-regions" id="toc-figure-3-heatmap-of-peak-distribution-across-gene-regions" class="nav-link" data-scroll-target="#figure-3-heatmap-of-peak-distribution-across-gene-regions">Figure 3: Heatmap of Peak Distribution Across Gene Regions</a></li>
+  <li><a href="#figure-4-distribution-of-peaks-across-genomic-regions" id="toc-figure-4-distribution-of-peaks-across-genomic-regions" class="nav-link" data-scroll-target="#figure-4-distribution-of-peaks-across-genomic-regions">Figure 4: Distribution of Peaks Across Genomic Regions</a></li>
+  <li><a href="#figure-5-chromatin-accessibility-in-cardiometabolic-vs-control-genes" id="toc-figure-5-chromatin-accessibility-in-cardiometabolic-vs-control-genes" class="nav-link" data-scroll-target="#figure-5-chromatin-accessibility-in-cardiometabolic-vs-control-genes">Figure 5: Chromatin Accessibility in Cardiometabolic vs Control Genes</a></li>
+  <li><a href="#transition-to-next-question-1" id="toc-transition-to-next-question-1" class="nav-link" data-scroll-target="#transition-to-next-question-1">Transition to Next Question</a></li>
+  <li><a href="#figure-6-chromatin-accessibility-across-steatosis-severity" id="toc-figure-6-chromatin-accessibility-across-steatosis-severity" class="nav-link" data-scroll-target="#figure-6-chromatin-accessibility-across-steatosis-severity">Figure 6: Chromatin Accessibility Across Steatosis Severity</a></li>
+  <li><a href="#figure-7-anova-results" id="toc-figure-7-anova-results" class="nav-link" data-scroll-target="#figure-7-anova-results">Figure 7: ANOVA Results</a></li>
+  <li><a href="#overall-summary-of-figures" id="toc-overall-summary-of-figures" class="nav-link" data-scroll-target="#overall-summary-of-figures">Overall Summary of Figures</a></li>
+  </ul></li>
+  <li><a href="#discussionsynthesis" id="toc-discussionsynthesis" class="nav-link" data-scroll-target="#discussionsynthesis">Discussion/Synthesis</a></li>
+  <li><a href="#limitations-and-future-work" id="toc-limitations-and-future-work" class="nav-link" data-scroll-target="#limitations-and-future-work">Limitations and Future Work</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -135,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Results</h1>
 </div>
 
 
@@ -152,9 +173,121 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key findings</h2>
+<ul>
+<li><p>Cardiometabolic genes show a higher association with ATAC-seq peaks compared to control genes, suggesting enrichment in accessible chromatin regions</p></li>
+<li><p>Fisher’s Exact Test indicates a statistically significant relationship between gene type and chromatin accessibility (p &lt; 2.2 × 10⁻¹⁶)</p></li>
+<li><p>Chromatin accessibility is primarily located in regulatory regions, especially promoters and introns, with fewer peaks observed in exons</p></li>
+<li><p>Cardiometabolic genes display higher and more consistent chromatin accessibility, while control genes show greater variability and more extreme values</p></li>
+<li><p>Differences in chromatin accessibility are observed across steatosis severity groups (NA/None, Mild/Moderate, Severe), suggesting changes with disease progression</p></li>
+<li><p>ANOVA results (F = 9.87, p &lt; 0.001) indicate statistically significant differences in chromatin accessibility between steatosis groups</p></li>
+<li><p>Overall, chromatin accessibility patterns support a regulatory role in cardiometabolic gene expression and may contribute to liver disease progression</p></li>
+</ul>
+</section>
+<section id="figures" class="level2">
+<h2 class="anchored" data-anchor-id="figures">Figures</h2>
+<section id="figure-1-cardiometabolic-vs-control-gene-accessibility" class="level3">
+<h3 class="anchored" data-anchor-id="figure-1-cardiometabolic-vs-control-gene-accessibility">Figure 1: Cardiometabolic vs Control Gene Accessibility</h3>
+<p><img src="images/barplot_ATAC.png" class="img-fluid"></p>
+<p>This bar plot compares the proportion of genes associated with ATAC-seq peaks between cardiometabolic and control groups. Cardiometabolic genes show a much higher proportion of accessible chromatin regions, while control genes show relatively low accessibility.</p>
+<p><strong>Interpretation:</strong><br>
+This suggests that cardiometabolic genes are more frequently located in open chromatin regions and are therefore more actively regulated.</p>
+<hr>
+</section>
+<section id="figure-2-fishers-exact-test-results" class="level3">
+<h3 class="anchored" data-anchor-id="figure-2-fishers-exact-test-results">Figure 2: Fisher’s Exact Test Results</h3>
+<p><img src="images/fisher_test.png" class="img-fluid"></p>
+<p>Fisher’s Exact Test was used to evaluate whether the association between gene type and chromatin accessibility is statistically significant. The results show a highly significant p-value (p &lt; 2.2 × 10⁻¹⁶) and an infinite odds ratio.</p>
+<p><strong>Interpretation:</strong><br>
+There is a very strong statistical association between cardiometabolic genes and the presence of ATAC-seq peaks.</p>
+<p><strong>Conclusion (Hypothesis 1):</strong><br>
+These results confirm that cardiometabolic genes are significantly enriched in accessible chromatin regions, supporting our first hypothesis.</p>
+<hr>
+</section>
+<section id="transition-to-next-question" class="level3">
+<h3 class="anchored" data-anchor-id="transition-to-next-question">Transition to Next Question</h3>
+<p>After establishing that cardiometabolic genes are enriched in accessible chromatin, this led us to our next question: <strong>where within the genome are these accessible regions located, and what does this reveal about gene regulation?</strong></p>
+<hr>
+</section>
+<section id="figure-3-heatmap-of-peak-distribution-across-gene-regions" class="level3">
+<h3 class="anchored" data-anchor-id="figure-3-heatmap-of-peak-distribution-across-gene-regions">Figure 3: Heatmap of Peak Distribution Across Gene Regions</h3>
+<p><img src="images/heatmap.png" class="img-fluid"></p>
+<p>This heatmap shows the distribution of ATAC-seq peaks across different genomic regions (exon, intergenic, intron, promoter) for the top 20 cardiometabolic genes. Peaks are most strongly enriched in intronic and promoter regions.</p>
+<p><strong>Interpretation:</strong><br>
+Promoters and introns are key regulatory regions, suggesting that chromatin accessibility is concentrated in areas involved in gene regulation rather than coding regions.</p>
+<hr>
+</section>
+<section id="figure-4-distribution-of-peaks-across-genomic-regions" class="level3">
+<h3 class="anchored" data-anchor-id="figure-4-distribution-of-peaks-across-genomic-regions">Figure 4: Distribution of Peaks Across Genomic Regions</h3>
+<p><img src="images/annotation_distribution.png" class="img-fluid"></p>
+<p>This bar plot summarizes the total number of peaks found in each genomic region. Introns and promoters contain the highest number of peaks, while exons contain the fewest.</p>
+<p><strong>Interpretation:</strong><br>
+This reinforces the heatmap findings and confirms that accessible chromatin is primarily located in regulatory regions.</p>
+<hr>
+</section>
+<section id="figure-5-chromatin-accessibility-in-cardiometabolic-vs-control-genes" class="level3">
+<h3 class="anchored" data-anchor-id="figure-5-chromatin-accessibility-in-cardiometabolic-vs-control-genes">Figure 5: Chromatin Accessibility in Cardiometabolic vs Control Genes</h3>
+<p><img src="images/boxplot_ATAC.png" class="img-fluid"></p>
+<p>This boxplot compares peak counts between cardiometabolic and control genes. Cardiometabolic genes show a higher median accessibility and more consistent distribution, while control genes display greater variability and many low or zero values.</p>
+<p><strong>Interpretation:</strong><br>
+Cardiometabolic genes are more consistently accessible, while control genes show less stable chromatin accessibility patterns.</p>
+<p><strong>Conclusion (Hypothesis 2):</strong><br>
+Together, these results demonstrate that chromatin accessibility is concentrated in regulatory regions and reflects functional gene regulation, supporting our second hypothesis.</p>
+<hr>
+</section>
+<section id="transition-to-next-question-1" class="level3">
+<h3 class="anchored" data-anchor-id="transition-to-next-question-1">Transition to Next Question</h3>
+<p>After identifying that chromatin accessibility is enriched in regulatory regions, this led us to our final question: <strong>does chromatin accessibility change with disease progression, specifically across steatosis severity?</strong></p>
+<hr>
+</section>
+<section id="figure-6-chromatin-accessibility-across-steatosis-severity" class="level3">
+<h3 class="anchored" data-anchor-id="figure-6-chromatin-accessibility-across-steatosis-severity">Figure 6: Chromatin Accessibility Across Steatosis Severity</h3>
+<p><img src="images/steatosis_boxplot.png" class="img-fluid"></p>
+<p>This boxplot compares chromatin accessibility across steatosis severity groups (NA/None, Mild/Moderate, Severe). While there is overlap, slight shifts in distribution can be observed across groups.</p>
+<p><strong>Interpretation:</strong><br>
+Chromatin accessibility appears to vary with disease severity, although variability within each group is high.</p>
+<hr>
+</section>
+<section id="figure-7-anova-results" class="level3">
+<h3 class="anchored" data-anchor-id="figure-7-anova-results">Figure 7: ANOVA Results</h3>
+<p><img src="images/anova_table.png" class="img-fluid"></p>
+<p>ANOVA was used to test for differences in chromatin accessibility across steatosis groups. The results show a significant effect (F = 9.87, p &lt; 0.001).</p>
+<p><strong>Interpretation:</strong><br>
+There are statistically significant differences in chromatin accessibility between steatosis severity groups.</p>
+<p><strong>Conclusion (Hypothesis 3):</strong><br>
+These results indicate that chromatin accessibility changes with disease progression, supporting our third hypothesis.</p>
+<hr>
+</section>
+<section id="overall-summary-of-figures" class="level3">
+<h3 class="anchored" data-anchor-id="overall-summary-of-figures">Overall Summary of Figures</h3>
+<p>This stepwise analysis shows a clear progression:</p>
+<ul>
+<li>Cardiometabolic genes are enriched in accessible chromatin<br>
+</li>
+<li>Accessible regions are concentrated in regulatory DNA (promoters and introns)<br>
+</li>
+<li>Chromatin accessibility varies across disease severity</li>
+</ul>
+<p>Together, these findings support all three hypotheses and highlight the role of chromatin accessibility in gene regulation and liver disease progression.</p>
+</section>
+</section>
+<section id="discussionsynthesis" class="level2">
+<h2 class="anchored" data-anchor-id="discussionsynthesis">Discussion/Synthesis</h2>
+<p>This study provides insight into how chromatin accessibility contributes to the regulation of cardiometabolic genes in the liver and how these patterns relate to disease progression. Rather than simply identifying accessible regions, our analysis highlights a consistent pattern linking chromatin accessibility to gene regulation and disease-relevant biological processes.</p>
+<p>Our finding that cardiometabolic genes are significantly enriched in accessible chromatin regions supports previous work demonstrating that regulatory DNA plays a key role in mediating genetic risk for complex diseases (PubMed: 41338218). Prior studies have shown that integrating chromatin accessibility data with genetic variation helps explain how non-coding regions influence gene expression, particularly in metabolically active tissues like the liver. Our results extend this idea by specifically showing that cardiometabolic genes are more consistently associated with accessible chromatin compared to control genes, reinforcing the importance of regulatory elements in disease-associated gene expression.</p>
+<p>Additionally, we observed that chromatin accessibility is concentrated in promoters and introns rather than exons. This aligns with established biological understanding that promoters initiate transcription and intronic regions often contain enhancers and other regulatory elements (ENCODE Project Consortium, 2012; Andersson et al., 2014). Previous studies have similarly reported that accessible chromatin regions are enriched in non-coding regulatory DNA, supporting their functional role in controlling gene expression (Buenrostro et al., 2013; Corces et al., 2017). Our findings are consistent with this literature and further emphasize that chromatin accessibility reflects regulatory activity rather than simply gene structure.</p>
+<p>Importantly, our analysis also demonstrates that chromatin accessibility varies across steatosis severity groups, suggesting a potential link between chromatin dynamics and disease progression. This observation is consistent with recent studies showing that epigenetic changes, including chromatin remodeling, play a role in liver disease and metabolic dysfunction (eLife, 2022; ScienceDirect, 2023; PMC9116206). While variability within groups was high, the statistically significant differences observed through ANOVA indicate that accessibility patterns are not random and may reflect underlying biological changes associated with disease severity.</p>
+<p>Together, these findings contribute to a growing body of evidence that chromatin accessibility is a critical component of gene regulation in complex diseases. The stepwise structure of our analysis—from gene enrichment, to regulatory location, to disease progression—provides a more integrated view of how chromatin accessibility operates across multiple biological levels.</p>
+<p>The new insight gained from this study is the clear connection between cardiometabolic gene enrichment, regulatory region localization, and disease-associated changes in chromatin accessibility within the same dataset. By combining these analyses, we show that chromatin accessibility is not only associated with specific genes but also reflects broader regulatory patterns that change with disease progression. This highlights the potential of epigenomic data to improve our understanding of disease mechanisms and may inform future approaches for identifying therapeutic targets in cardiometabolic disease.</p>
+</section>
+<section id="limitations-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-future-work">Limitations and Future Work</h2>
+<p>One limitation of this study is the relatively small sample size (39 liver samples), which may limit how generalizable the results are. There was also high variability within groups, especially in the steatosis analysis, making subtle differences harder to detect. Additionally, this analysis focuses on chromatin accessibility and does not directly link these patterns to gene expression. Since the steatosis groups were taken from supplemental metadata, there may also be some variability in how disease severity was classified. Finally, the study is observational, so it shows associations rather than causation.</p>
+<p>Future work could improve this analysis by integrating the RNA-seq data to directly connect chromatin accessibility with gene expression. Increasing the sample size and analyzing specific liver cell types would provide more detailed insights. Longitudinal studies could help track how chromatin accessibility changes over time with disease progression. Experimental validation of key regulatory regions identified in this study would also help confirm their biological significance.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
