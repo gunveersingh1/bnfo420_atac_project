@@ -179,15 +179,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Despite these advances, there is still a gap in understanding how chromatin accessibility specifically relates to cardiometabolic genes within liver tissue and how these patterns change across disease states (Tilg et al., 2021; Anstee et al., 2019). Addressing this gap is important for identifying regulatory mechanisms that contribute to disease progression and may provide insight into potential therapeutic targets.</p>
 <p>In this study, we analyze a human liver single-nucleus ATAC-seq dataset derived from 39 deceased liver samples (~68,000 nuclei and ~300,000 accessible regions). Steatosis severity information was obtained from supplemental data and used to group samples into NA/None, Mild/Moderate, and Severe. We first evaluate whether cardiometabolic genes are enriched in accessible chromatin regions, then examine where these regions are located within genes, and finally assess how chromatin accessibility changes across disease severity.</p>
 <p><strong>Hypothesis: Cardiometabolic genes are enriched in accessible chromatin, accessible regions are concentrated in regulatory areas such as promoters and introns, and chromatin accessibility changes across steatosis severity groups, reflecting its role in gene regulation and disease progression.</strong></p>
-<p>#Methods Pipeline Diagram</p>
-<div class="mermaid">
-<p>flowchart LR</p>
-<p>A[Dataset] –&gt; B[Preprocessing] B –&gt; C[Annotation] C –&gt; D[Classification] D –&gt; E[Fisher Test]</p>
-<p>C –&gt; F[Peak Regions] D –&gt; G[Boxplots]</p>
-<p>B –&gt; H[Steatosis Groups] H –&gt; I[Group Comparison] I –&gt; J[ANOVA]</p>
-<p>E –&gt; K[Visualization] F –&gt; K G –&gt; K J –&gt; K</p>
-<p>K –&gt; L[Interpretation]</p>
-</div>
+<p>##Methods Pipeline Diagram ### Pipeline Diagram</p>
+<p><img src="images/pipeline.png" class="img-fluid"></p>
 </section>
 <section id="datasets" class="level2">
 <h2 class="anchored" data-anchor-id="datasets">Dataset(s)</h2>
@@ -195,20 +188,18 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Source:</strong> Gene Expression Omnibus (GEO), accession GSE296875; human liver single-nucleus multiome dataset (RNA-seq + ATAC-seq) from the study associated with PMID: 41338218</p></li>
 <li><p><strong>Sample size:</strong> 39 deceased human liver samples (~68,000 nuclei total), with approximately 300,000 accessible chromatin regions (ATAC-seq peaks). Samples were grouped by steatosis severity using supplemental metadata from the original study:</p>
 <ul>
-<li>NA/None (n = 19)<br>
-</li>
-<li>Mild/Moderate (n = 16)<br>
-</li>
-<li>Severe (n = 4)</li>
+<li><p>NA/None (n = 19)</p></li>
+<li><p>Mild/Moderate (n = 16)</p></li>
+<li><p>Severe (n = 4)</p></li>
 </ul></li>
 <li><p><strong>Key variables:</strong></p>
 <ul>
-<li>Chromatin accessibility peaks (genomic coordinates)</li>
-<li>Gene annotations (mapped using ChIPseeker)</li>
-<li>Gene expression data (from matched RNA-seq modality)</li>
-<li>Gene type (cardiometabolic vs control)</li>
-<li>Peak location within gene (promoter, intron, exon, intergenic)</li>
-<li>Steatosis severity group (NA/None, Mild/Moderate, Severe)</li>
+<li><p>Chromatin accessibility peaks (genomic coordinates)</p></li>
+<li><p>Gene annotations (mapped using ChIPseeker)</p></li>
+<li><p>Gene expression data (from matched RNA-seq modality)</p></li>
+<li><p>Gene type (cardiometabolic vs control)</p></li>
+<li><p>Peak location within gene (promoter, intron, exon, intergenic)</p></li>
+<li><p>Steatosis severity group (NA/None, Mild/Moderate, Severe)</p></li>
 </ul></li>
 <li><p><strong>License/usage notes:</strong></p>
 <ul>
@@ -224,81 +215,54 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>Cleaning / QC</strong>
 <ul>
-<li>Load ATAC-seq peak dataset and verify genomic coordinate formatting and gene annotations<br>
-</li>
-<li>Remove missing or inconsistent entries and ensure accurate peak-to-gene mapping<br>
-</li>
-<li>Integrate steatosis metadata from the supplemental information of the original study<br>
-</li>
-<li>Group samples into three categories: NA/None, Mild/Moderate, and Severe<br>
-</li>
-<li>Confirm consistency between peak data and sample-level metadata across the 39 liver samples</li>
+<li><p>Load ATAC-seq peak dataset and verify genomic coordinate formatting and gene annotations</p></li>
+<li><p>Remove missing or inconsistent entries and ensure accurate peak-to-gene mapping</p></li>
+<li><p>Integrate steatosis metadata from the supplemental information of the original study</p></li>
+<li><p>Group samples into three categories: NA/None, Mild/Moderate, and Severe</p></li>
+<li><p>Confirm consistency between peak data and sample-level metadata across the 39 liver samples</p></li>
 </ul></li>
 <li><strong>Visualizations</strong>
 <ul>
-<li>Bar plots to compare proportion of genes with ATAC peaks (cardiometabolic vs control)<br>
-</li>
-<li>Heatmaps to visualize distribution of peaks across genomic regions (promoter, intron, exon, intergenic)<br>
-</li>
-<li>Boxplots to compare chromatin accessibility between cardiometabolic and control genes<br>
-</li>
-<li>Boxplots to assess differences in chromatin accessibility across steatosis severity groups</li>
+<li><p>Bar plots to compare proportion of genes with ATAC peaks (cardiometabolic vs control)</p></li>
+<li><p>Heatmaps to visualize distribution of peaks across genomic regions (promoter, intron, exon, intergenic)</p></li>
+<li><p>Boxplots to compare chromatin accessibility between cardiometabolic and control genes</p></li>
+<li><p>Boxplots to assess differences in chromatin accessibility across steatosis severity groups</p></li>
 </ul></li>
 <li><strong>Statistical / analytical approach</strong>
 <ul>
-<li>Fisher’s Exact Test to evaluate enrichment of ATAC peaks in cardiometabolic vs control genes<br>
-</li>
-<li>ANOVA to test for differences in chromatin accessibility across steatosis groups (NA/None, Mild/Moderate, Severe)<br>
-</li>
-<li>Descriptive statistics to summarize peak distributions and variability</li>
+<li><p>Fisher’s Exact Test to evaluate enrichment of ATAC peaks in cardiometabolic vs control genes</p></li>
+<li><p>ANOVA to test for differences in chromatin accessibility across steatosis groups (NA/None, Mild/Moderate, Severe)</p></li>
+<li><p>Descriptive statistics to summarize peak distributions and variability</p></li>
 </ul></li>
 <li><strong>Validation / robustness checks</strong>
 <ul>
-<li>Cross-check peak annotation categories (promoter, intron, exon, intergenic) for consistency<br>
-</li>
-<li>Compare results across multiple visualizations to ensure patterns are reproducible<br>
-</li>
-<li>Evaluate statistical significance (p-values) to confirm observed trends<br>
-</li>
-<li>Assess within-group variability to ensure results are not driven by outliers<br>
-</li>
-<li>Verify steatosis group assignments using supplemental metadata from the original study</li>
+<li><p>Cross-check peak annotation categories (promoter, intron, exon, intergenic) for consistency</p></li>
+<li><p>Compare results across multiple visualizations to ensure patterns are reproducible</p></li>
+<li><p>Evaluate statistical significance (p-values) to confirm observed trends</p></li>
+<li><p>Assess within-group variability to ensure results are not driven by outliers</p></li>
+<li><p>Verify steatosis group assignments using supplemental metadata from the original study</p></li>
 </ul></li>
 <li><strong>Website sections</strong>
 <ul>
-<li>One-paragraph summary and Abstract → <em>index.qmd</em><br>
-</li>
-<li>Introduction (background, motivation, rationale, and hypothesis) → <em>proposal.qmd</em><br>
-</li>
-<li>Dataset description (including multiome ATAC-seq + RNA-seq data and steatosis metadata) → <em>proposal.qmd</em><br>
-</li>
-<li>Methods (data processing, peak annotation, and analysis pipeline) → <em>proposal.qmd</em><br>
-</li>
-<li>Results (figure-by-figure analysis with clear interpretation) → <em>results.qmd</em><br>
-</li>
-<li>Discussion (synthesis of findings and connection to literature) → <em>results.qmd</em><br>
-</li>
-<li>Limitations and future work → <em>results.qmd</em><br>
-</li>
-<li>References with cited sources → <em>references.bib</em><br>
-</li>
-<li>Team contributions → <em>team.qmd</em></li>
+<li><p>One-paragraph summary and Abstract → <em>index.qmd</em></p></li>
+<li><p>Introduction (background, motivation, rationale, and hypothesis) → <em>proposal.qmd</em></p></li>
+<li><p>Dataset description (including multiome ATAC-seq + RNA-seq data and steatosis metadata) → <em>proposal.qmd</em></p></li>
+<li><p>Methods (data processing, peak annotation, and analysis pipeline) → <em>proposal.qmd</em></p></li>
+<li><p>Results (figure-by-figure analysis with clear interpretation) → <em>results.qmd</em></p></li>
+<li><p>Discussion (synthesis of findings and connection to literature) → <em>results.qmd</em></p></li>
+<li><p>Limitations and future work → <em>results.qmd</em></p></li>
+<li><p>References with cited sources → <em>references.bib</em></p></li>
+<li><p>Team contributions → <em>team.qmd</em></p></li>
 </ul></li>
 <li><strong>Key figures/tables</strong>
 <ul>
-<li>Bar plot showing proportion of cardiometabolic vs control genes associated with ATAC-seq peaks<br>
-</li>
-<li>Fisher’s Exact Test results (table or figure) demonstrating statistical significance of enrichment<br>
-</li>
-<li>Heatmap showing distribution of chromatin accessibility across genomic regions<br>
-</li>
-<li>Bar plot of peak locations (promoter, intron, exon, intergenic)<br>
-</li>
-<li>Boxplot comparing chromatin accessibility between cardiometabolic and control genes<br>
-</li>
-<li>Boxplot comparing chromatin accessibility across steatosis severity groups (NA/None, Mild/Moderate, Severe)<br>
-</li>
-<li>ANOVA results summary (table or figure) showing differences in accessibility across disease groups</li>
+<li><p>Bar plot showing proportion of cardiometabolic vs control genes associated with ATAC-seq peaks</p></li>
+<li><p>Fisher’s Exact Test results (table or figure) demonstrating statistical significance of enrichment</p></li>
+<li><p>Heatmap showing distribution of chromatin accessibility across genomic regions</p></li>
+<li><p>Bar plot of peak locations (promoter, intron, exon, intergenic)</p></li>
+<li><p>Boxplot comparing chromatin accessibility between cardiometabolic and control genes</p></li>
+<li><p>Boxplot comparing chromatin accessibility across steatosis severity groups (NA/None, Mild/Moderate, Severe)</p></li>
+<li><p>ANOVA results summary (table or figure) showing differences in accessibility across disease groups</p></li>
 </ul></li>
 </ul>
 
