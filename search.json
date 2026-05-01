@@ -32,7 +32,7 @@
     "href": "index.html#where-to-find-things",
     "title": "ATAC-seq analysis of liver chromatin accessibility Focus on gene regulation and disease progression",
     "section": "Where to find things",
-    "text": "Where to find things\n\nScripts: scripts/\nData notes: data/README.md\nFigures: figures/\nCitations: references.bib"
+    "text": "Where to find things\n\nScripts: scripts/\nData notes: data/README.md\nFigures: images/\nCitations: references.qmd"
   },
   {
     "objectID": "about.html",
