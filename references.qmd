@@ -16,13 +16,9 @@ Broadaway, K. A., et al. (2024). *[Liver eQTL meta-analysis illuminates potentia
 
 Wilson, E. P., et al. (2025). *[Skeletal muscle eQTL meta-analysis implicates genes in complex traits](https://pubmed.ncbi.nlm.nih.gov/40992379/)*.
 
-*Article from PubMed ID 39986281*  
-*Chromatin accessibility and disease-related regulatory mechanisms*  
-https://pubmed.ncbi.nlm.nih.gov/39986281/
+- PubMed Study. (2024). *[Chromatin accessibility and disease-related regulatory mechanisms](https://pubmed.ncbi.nlm.nih.gov/39986281/)*.
 
-*Article from PubMed ID 41218612*  
-*Genetic and epigenomic regulation of cardiometabolic traits*  
-https://pubmed.ncbi.nlm.nih.gov/41218612/
+- PubMed Study. (2025). *[Genetic and epigenomic regulation of cardiometabolic traits](https://pubmed.ncbi.nlm.nih.gov/41218612/)*.
 
 ---
 
