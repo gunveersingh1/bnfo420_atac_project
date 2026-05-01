@@ -7,8 +7,6 @@ Cardiometabolic diseases are strongly linked to liver function, but the role of 
 
 ## Introduction
 
-## Introduction
-
 Cardiometabolic diseases, including diabetes, obesity, and non-alcoholic fatty liver disease (NAFLD), are increasing globally and represent a major public health concern. The liver plays a central role in lipid metabolism and glucose homeostasis, making it a key organ in disease progression ([Currin et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34038741/); [Broadaway et al., 2024](https://pubmed.ncbi.nlm.nih.gov/39173627/)). These metabolic processes are tightly regulated at the genomic level, where disruptions can contribute to disease development ([Wilson et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40992379/)).
 
 While genome-wide association studies (GWAS) have identified many genetic variants linked to cardiometabolic disease, the biological mechanisms connecting these variants to gene regulation remain unclear ([Schmitt et al., 2015](https://pubmed.ncbi.nlm.nih.gov/25559105/); [Zhang et al., 2023](https://academic.oup.com/gpb/article/23/6/qzaf115/8340039)). Understanding how regulatory DNA elements influence gene expression is critical for linking genetic variation to disease phenotypes ([Schmitt et al., 2015](https://pubmed.ncbi.nlm.nih.gov/25559105/)).
