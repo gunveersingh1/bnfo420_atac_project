@@ -198,12 +198,21 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p><strong>Key variables:</strong></p>
 <ul>
-<li><p>Chromatin accessibility peaks (genomic coordinates)</p></li>
+<li><p>Chromatin accessibility peaks (genomic coordinates from ATAC-seq)</p></li>
 <li><p>Gene annotations (mapped using ChIPseeker)</p></li>
 <li><p>Gene expression data (from matched RNA-seq modality)</p></li>
-<li><p>Gene type (cardiometabolic vs control)</p></li>
-<li><p>Peak location within gene (promoter, intron, exon, intergenic)</p></li>
-<li><p>Steatosis severity group (NA/None, Mild/Moderate, Severe)</p></li>
+<li><p>Gene classification:</p>
+<ul>
+<li>Cardiometabolic genes (genes associated with metabolic disease)</li>
+<li>Control group defined as all remaining non-cardiometabolic genes in the dataset</li>
+</ul></li>
+<li><p>Peak location within genes (promoter, intron, exon, intergenic regions)</p></li>
+<li><p>Steatosis severity group:</p>
+<ul>
+<li>NA/None (used as the baseline control group)</li>
+<li>Mild/Moderate</li>
+<li>Severe</li>
+</ul></li>
 </ul></li>
 <li><p><strong>License/usage notes:</strong></p>
 <ul>
