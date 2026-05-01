@@ -9,7 +9,7 @@ website:
       - href: index.qmd
         text: Home
       - href: proposal.qmd
-        text: Methods
+        text: Proposal
       - href: results.qmd
         text: Results
       - href: team.qmd
