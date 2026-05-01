@@ -2,20 +2,27 @@ project:
   type: website
 
 website:
-  title: "atac_project"
+  title: "ATAC-seq Liver Chromatin Accessibility"
+  
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: proposal.qmd
+        text: Methods
+      - href: results.qmd
+        text: Results
+      - href: team.qmd
+        text: Team
+      - href: references.qmd
+        text: References
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: flatly
     css: styles.css
     toc: true
-
-
-
+    toc-location: left
+    smooth-scroll: true
+    code-fold: false
+    mermaid: true
